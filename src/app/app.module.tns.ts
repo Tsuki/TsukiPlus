@@ -11,6 +11,8 @@ import {HomeComponent} from './home/home.component';
 
 // Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
 import {NativeScriptHttpClientModule} from 'nativescript-angular/http-client';
+import {StoreModule} from '@ngrx/store';
+import {metaReducers, reducers} from './reducers';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import {NativeScriptHttpClientModule} from 'nativescript-angular/http-client';
   imports: [
     NativeScriptModule,
     AppRoutingModule,
-    NativeScriptHttpClientModule
+    NativeScriptHttpClientModule,
+    StoreModule.forRoot(reducers, {metaReducers})
   ],
   providers: [],
   bootstrap: [AppComponent],
