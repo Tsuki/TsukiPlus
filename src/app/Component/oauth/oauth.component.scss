@@ -43,3 +43,9 @@
   margin: 20px auto 0;
   display: block;
 }
+
+/deep/ .ui-autocomplete,
+/deep/ .ui-inputtext {
+  width: 100%;
+
+}
