@@ -1,8 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 
 import {Store, select} from '@ngrx/store';
-import {OAuthInfo} from '~/app/ngrx/o-auth.reducer';
 import {Observable} from 'rxjs';
+import {cuckoostore} from '~/app/interface/store';
+import OAuthInfo = cuckoostore.OAuthInfo;
 
 @Component({
   selector: 'app-home',
