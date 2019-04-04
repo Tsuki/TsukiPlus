@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-oauth',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OAuthComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  onSubmitServerName($event: Event) {
+    return '';
   }
 
 }

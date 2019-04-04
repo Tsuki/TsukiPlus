@@ -1,3 +1,18 @@
-<p>
-  oauth works!
-</p>
+<section class="oauth-container">
+
+  <div class="form-container">
+    <p class="oauth-form-brand">{{'oauth.form_brand'|translate}}</p>
+
+    <p class="oauth-login-hint">{{'oauth.login_hint'|translate}}</p>
+
+    <form ref="form">
+
+
+      <button class="submit-server-name-btn"
+              (click)="onSubmitServerName($event)">{{'oauth.confirm_input'|translate}}</button>
+
+    </form>
+
+  </div>
+
+</section>
