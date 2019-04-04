@@ -12,7 +12,7 @@ import {HomeComponent} from './home/home.component';
 // Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
 import {NativeScriptHttpClientModule} from 'nativescript-angular/http-client';
 import {StoreModule} from '@ngrx/store';
-import {metaReducers, reducers} from './reducers';
+import {metaReducersMap, reducers} from './ngrx';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import {metaReducers, reducers} from './reducers';
     NativeScriptModule,
     AppRoutingModule,
     NativeScriptHttpClientModule,
-    StoreModule.forRoot(reducers, {metaReducers})
+    StoreModule.forRoot(reducers, {metaReducers: metaReducersMap})
   ],
   providers: [],
   bootstrap: [AppComponent],
